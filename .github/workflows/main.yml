@@ -13,6 +13,6 @@ jobs:
       - name: Add a fake 'git' to the PATH to force checkout to download zipball instead
         shell: cmd
         run: |
-          cd C:/Users/Admin/.jenkins/workspace/hello
+          cd D:\actions-runner\_work\hello\hello\my_private_repository
           copy . D:\hello\web /y
      
