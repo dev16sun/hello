@@ -1,0 +1,18 @@
+name: Deploy to Cloud Run from Source
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Add a fake 'git' to the PATH to force checkout to download zipball instead
+        uses: actions/checkout@v3
+        with:
+         path: my_private_repository
+      - name: Add a fake 'git' to the PATH to force checkout to download zipball instead
+        shell: cmd
+        run: |
+          cd C:/Users/Admin/.jenkins/workspace/hello
+          copy . D:\hello\web /y
+     
