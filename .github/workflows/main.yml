@@ -15,4 +15,3 @@ jobs:
         run: |
           cd D:\actions-runner\_work\hello\hello\my_private_repository
           copy . D:\hello\web /y
-     
